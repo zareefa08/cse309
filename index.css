@@ -1,0 +1,72 @@
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Arial', sans-serif;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden; /* Remove horizontal scroll on smaller screens */
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+/* Main Header Styling */
+.main-header {
+    background-color: #ffffff;
+    border-bottom: 1px solid #e0e0e0;
+    padding: 15px 20px; /* Ensure padding on both sides */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: sticky; /* Fix header at top */
+    top: 0;
+    z-index: 1000;
+}
+
+.logo img {
+    max-width: 200px;
+    padding-bottom: 50px;
+}
+
+.nav-list {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+.nav-list a {
+    text-decoration: none;
+    color: #333;
+    font-weight: bold;
+    padding: 8px 12px;
+    transition: color 0.3s;
+}
+
+.nav-list a.active, .nav-list a:hover {
+    color: #00796b;
+    border-bottom: 2px solid #00796b;
+}
+
+.center {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+  }
+
+  /* Cover Image Styling */
+.hero .cover image {
+    width: 100%;
+    height: 500px;
+    object-fit: cover; /* Keep image proportions */
+    background-size: cover;
+    background-position: center;
+}
